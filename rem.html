@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>rem</title>
+    <style>
+        .box{
+            width: 10rem;
+            height: 10rem;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+<div class="box">123</div>
+<script type="text/javascript">
+    //获取视窗宽度
+  var htmlFont = document.documentElement.clientWidth || document.body.clientWidth;//兼容不同浏览器，获取设备宽度
+  console.log(htmlFont);
+
+    //获取视窗高度
+  var htmlDom = document.getElementsByTagName('html')[0];
+
+  htmlDom.style.fontSize = htmlFont / 10 + 'px';
+</script>
+</body>
+</html>
